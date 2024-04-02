@@ -1,0 +1,166 @@
+<html>
+<head>
+<title>Джон Стайнбек</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="new 1.css">
+<link rel="icon" href="en_logo_oLM_icon.ico">
+<link href="https://bg.allfont.net/allfont.css?fonts=calligraph" rel="stylesheet" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	  <script src="https://kit.fontawesome.com/72eda564f2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+            <nav>
+               <div class="menu-icon">
+                  <i class="fa fa-bars fa-2x"></i>
+               </div>
+               <div class="logo">
+                  <img id ="i1" src="Layer2.png" class="logo">
+               </div>
+               <div class="menu">
+                  <ul>
+                     <li><a href="#">Home</a></li>
+                     <li><a href="author.html">About the author</a></li>
+                     <li><a href="books.html">Novels</a></li>
+                     <li><a href="films.html">Letter</a></li>  
+					 <li><a href="index.html">EN/BG</a></li> 					 
+                  </ul>
+               </div>
+            </nav>
+</header>
+<a href="#top" id="kotva">
+                <span class="far fa-hand-point-up"></span>
+</a>
+<div id="cf7" class="shadow">
+<img class="opaque" src="te1.png">
+<img  src="te2.png">
+<img  src="te3.png">
+<img  src="te4.png">
+</div>
+<p id="cf7_controls">
+<span id="cf7_controls">.</span>
+<span id="cf7_controls">.</span>
+<span id="cf7_controls">.</span>
+<span id="cf7_controls">.</span>
+<br>
+</p >
+<div id="b1"><hr><br><br><p id="i2"><span id="s1">T</span>he Nobel Prize in Literature 1962 was awarded to John Steinbeck "for his realistic and imaginative writings, combining as they do sympathetic humour and keen social perception."John Steinbeck received the Nobel Medal and Diploma on 10 December 1962 from the Swedish King Gustaf VI Adolf, at the Nobel Prize Award Ceremony held at the Stockholm Concert Hall. The Nobel Medal was donated by the Steinbeck family to the Stanford University Library in 2005.</p>
+ <iframe id="b11" width="600" height="335" src="https://www.youtube.com/embed/7SKEODtaQUU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe 
+<br><br><br><br><hr></div>
+<div id="b"><br><br>
+<h1>7 Things John Steinbeck Taught Us About The Great Depression</h1>
+<p id="i3"><span id="s2">T</span>he great John Steinbeck is best known for his works set during the Great Depression, particularly those that focused on migrant workers. The Grapes of Wrath, a winner of the National Book Award and Pulitzer Prize, and Of Mice and Men are two of his well-known works that are set during this highly stressful period. These books will teach anyone who reads them about the Great Depression, especially how it affected migrant workers. Through his works, Steinbeck was able to give a voice to the overlooked
+
+...</p>
+<a href="https://theculturetrip.com/north-america/usa/articles/7-things-john-steinbeck-taught-us-about-the-great-depression/" target="_blank"><button class="button button1">Read more</button></a><br><br><br><br>
+</div>
+<div id="o1">
+<p id="o2">Sing up and get 15% discount for Steinbeck books in store.bg</p>
+<div class="container10">
+  <div class="login_bar">
+    <input span class="login"></span>
+    <span class="subscribe_button" onclick="subscribeOnClick()">Send</span>
+    <span class="subscribing"></span>
+    <span class="thanks"> Thank you.</span>
+  </div>
+</div>
+</div>
+
+ <footer class="site-footer">
+      <div class="container7">
+        <div class="row">
+         <div class="col-md-8 col-sm-6 col-xs-12"><br>
+            <p class="copyright-text">Katerina Toncheva   2021@</p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            </ul>
+          </div>
+		   
+        </div>
+      </div>
+</footer>
+</body>
+</html>
+
+
+
+
+<script>	  
+$(document).ready(function() {
+  $("#cf7_controls").on('click', 'span', function() {
+    $("#cf7 img").removeClass("opaque");
+
+    var newImage = $(this).index();
+
+    $("#cf7 img").eq(newImage).addClass("opaque");
+
+    $("#cf7_controls span").removeClass("selected");
+    $(this).addClass("selected");
+  });
+});
+
+function myFunction() {
+  var x, text;
+
+  // Get the value of the input field with id="numb"
+  x = document.getElementById("numb").value;
+
+  // If x is Not a Number or less than one or greater than 10
+  if (isNaN(x) || x < 1 || x > 10) {
+    text = "Абонирахте се успешно.";
+  } else {
+    text = "Абонирахте се успешно.";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+var subscribe_button = document.querySelector(".subscribe_button");
+
+subscribe_button.addEventListener('click', function(){
+    var subscribing = document.querySelector(".subscribing");
+    var thanks = document.querySelector(".thanks");
+    var login = document.querySelector(".login");
+
+    subscribing.classList.add("subscribing_active");
+    subscribe_button.classList.add("subscribe_button_active");
+    setTimeout(function(){
+        login.classList.add("login_active");
+    }, 1200);
+    setTimeout(function(){
+        thanks.classList.add("thanks_active");
+    }, 1400);
+
+    setTimeout(function(){
+        thanks.classList.remove("thanks_active");
+        login.classList.remove("login_active");
+        subscribing.classList.remove("subscribing_active");
+        subscribe_button.classList.remove("subscribe_button_active");
+    }, 4000);
+});
+
+$(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+	  
+	  
+</script>

@@ -1,0 +1,165 @@
+<html>
+<head>
+<title>Джон Стайнбек</title>
+<meta charset="UTF-8">
+<link rel="icon" href="bg_logo_ifV_icon.ico">
+<link rel="stylesheet" href="new 1.css">
+<link href="https://bg.allfont.net/allfont.css?fonts=calligraph" rel="stylesheet" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	  <script src="https://kit.fontawesome.com/72eda564f2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+            <nav>
+               <div class="menu-icon">
+                  <i class="fa fa-bars fa-2x"></i>
+               </div>
+               <div class="logo">
+                  <img id ="i1" src="Layer1.png" class="logo">
+               </div>
+               <div class="menu">
+                  <ul>
+                     <li><a href="#">Начало</a></li>
+                     <li><a href="avtor.html">За автора</a></li>
+                     <li><a href="knigi.html">Книги</a></li>
+                     <li><a href="filmi.html">Писмо</a></li>  
+					 <li><a href="index_.html">EN/BG</a></li> 					 
+                  </ul>
+               </div>
+            </nav>
+</header>
+<a href="#top" id="kotva">
+                <span class="far fa-hand-point-up"></span>
+</a>
+<div id="cf7" class="shadow">
+<img class="opaque" src="t1.png">
+<img  src="t2.png">
+<img  src="t3.png">
+<img  src="t4.png">
+</div>
+<p id="cf7_controls">
+<span id="cf7_controls">.</span>
+<span id="cf7_controls">.</span>
+<span id="cf7_controls">.</span>
+<span id="cf7_controls">.</span>
+<br>
+</p >
+<div id="b1"><hr><br><br><p id="i2"><span id="s1">П</span>рез 1962 г. Стайнбек печели Нобелова награда за литература за „реалистичното си и творческо писане, комбинирано с чувство за хумор и остри обществени възгледи“. В деня на съобщаването на победителя (25 октомври), когато преди церемонията е попитан от репортер дали заслужава наградата, Стайнбек отвръща „Честно, не.“В речта си при награждаването Стайнбек говори за своето възхищение към някои автори. През 1953 г. пише, че счита Ал Кап за „вероятно най-добрия писател в света днес“. На първата пресконференция след награждаването е попитан за любимите си автори и техните творби и той отвръща: „Разказите на Хемингуей и почти всичко на Фокнър“.
+През септември 1964 г. Стайнбек получава Медал на свободата на САЩ от Линдън Джонсън.</p>
+ <iframe id="b11" width="600" height="335" src="https://www.youtube.com/embed/7SKEODtaQUU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe 
+<br><br><br><br><hr></div>
+<div id="b"><br><br>
+<h1>7 неща, които Джон Стейнбек ни научи за голямата депресия</h1>
+<p id="i3"><span id="s2">В</span>еликият Джон Стейнбек е най-известен със своите творби поставени по време на Голямата депресия, особено тези, които са фокусирани върху работниците мигранти. Гроздовете на гнева, носител на Националната награда за книга и наградата Пулицър, и За мишките и хората са две от добре познатите му творби, които са поставени през този силно стресиращ период. Тези книги ще научат всеки, който ги чете, за Голямата депресия, особено как тя се отрази на работниците мигранти. Чрез своите творби Стайнбек успя да даде глас на пренебрегваните...</p>
+<a href="https://bg.shinshu-navi.com/8d-things-john-steinbeck-taught-us-about-the-great-depression-822a2" target="_blank" ><button class="button button1">Прочети още</button></a><br><br><br><br>
+</div>
+<div id="o1">
+<p id="o2">Регистрирай се и вземи 15% отстъпка за книги на Стайнбек в store.bg</p>
+<div class="container10">
+  <div class="login_bar">
+    <input span class="login"></span>
+    <span class="subscribe_button" onclick="subscribeOnClick()">Изпрати</span>
+    <span class="subscribing"></span>
+    <span class="thanks"> Кодът беше изпратен на посочената поща.</span>
+  </div>
+</div>
+</div>
+
+ <footer class="site-footer">
+      <div class="container7">
+        <div class="row">
+         <div class="col-md-8 col-sm-6 col-xs-12"><br>
+            <p class="copyright-text">Katerina Toncheva   2021@</p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            </ul>
+          </div>
+		   
+        </div>
+      </div>
+</footer>
+</body>
+</html>
+
+
+
+
+<script>	  
+$(document).ready(function() {
+  $("#cf7_controls").on('click', 'span', function() {
+    $("#cf7 img").removeClass("opaque");
+
+    var newImage = $(this).index();
+
+    $("#cf7 img").eq(newImage).addClass("opaque");
+
+    $("#cf7_controls span").removeClass("selected");
+    $(this).addClass("selected");
+  });
+});
+
+function myFunction() {
+  var x, text;
+
+  // Get the value of the input field with id="numb"
+  x = document.getElementById("numb").value;
+
+  // If x is Not a Number or less than one or greater than 10
+  if (isNaN(x) || x < 1 || x > 10) {
+    text = "Абонирахте се успешно.";
+  } else {
+    text = "Абонирахте се успешно.";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+var subscribe_button = document.querySelector(".subscribe_button");
+
+subscribe_button.addEventListener('click', function(){
+    var subscribing = document.querySelector(".subscribing");
+    var thanks = document.querySelector(".thanks");
+    var login = document.querySelector(".login");
+
+    subscribing.classList.add("subscribing_active");
+    subscribe_button.classList.add("subscribe_button_active");
+    setTimeout(function(){
+        login.classList.add("login_active");
+    }, 1200);
+    setTimeout(function(){
+        thanks.classList.add("thanks_active");
+    }, 1400);
+
+    setTimeout(function(){
+        thanks.classList.remove("thanks_active");
+        login.classList.remove("login_active");
+        subscribing.classList.remove("subscribing_active");
+        subscribe_button.classList.remove("subscribe_button_active");
+    }, 4000);
+});
+
+$(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+	  
+	  
+</script>
